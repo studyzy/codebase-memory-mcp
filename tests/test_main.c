@@ -20,6 +20,8 @@ extern void suite_log(void);
 extern void suite_str_util(void);
 extern void suite_platform(void);
 extern void suite_extraction(void);
+extern void suite_extraction_inheritance(void);
+extern void suite_extraction_imports(void);
 extern void suite_grammar_regression(void);
 extern void suite_grammar_labels(void);
 extern void suite_grammar_imports(void);
@@ -100,6 +102,8 @@ int main(void) {
     /* Existing C code regression tests */
     RUN_SUITE(ac);
     RUN_SUITE(extraction);
+    RUN_SUITE(extraction_inheritance);
+    RUN_SUITE(extraction_imports);
     RUN_SUITE(grammar_regression);
     RUN_SUITE(grammar_labels);
     RUN_SUITE(grammar_imports);
